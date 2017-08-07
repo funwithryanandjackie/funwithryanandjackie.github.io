@@ -1,0 +1,208 @@
+body {
+    background-image: url(collage.png);
+    font-family: "verdana";
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+h1 {
+  letter-spacing: 0.03em;
+  margin-bottom: 0.9rem;
+}
+
+.text-danger {
+  color: #ED1C24 !important;
+}
+
+.wedding.container-fluid {
+  background-color: white;
+  opacity: 0.9;
+  margin: 291px 80px 50px 80px;
+  padding: 30px;
+}
+
+.invitation {
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 3px 7px 19px 7px rgba(0,0,0,0.17);
+  border: 1px solid lightgrey;
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  color: #575555;
+  letter-spacing: 0.93px;
+  line-height: 24px;
+}
+
+.invitation .to {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.invitation .to hr {
+    flex: 2;
+}
+
+.invitation .to hr:first-child {
+    margin-left: 100px;
+} 
+
+.invitation .to hr:last-child {
+    margin-right: 100px;
+} 
+
+.invitation .to span {
+    flex: 1;
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+  margin: auto;
+  border: 1px solid lightgrey;
+}
+
+.accommodation hr {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.food {
+    text-align: left;
+}
+
+.food > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.food img {
+    height: 200px;
+    max-width: 266.66px;
+}
+
+.food hr {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.timeline ul {
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.timeline ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #5bc0de;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.timeline ul >li {
+    position: relative;
+    height: 70px;
+}
+
+.timeline ul >li:last-child {
+    height: 0;
+}
+
+.timeline ul >li .time {
+    display: block;
+    width: 50%;
+    padding-right: 30px;
+    position: absolute;
+    text-align: right;
+    font-size: 1.1em;
+}
+
+.timeline ul >li .icon {
+    width: 14px;
+    height: 14px;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 1.4em;
+    line-height: 40px;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    color: $blue;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #5bc0de; 
+    text-align: center;
+    left: 50%;
+    top: 0;
+    margin: 0 0 0 -16px;
+}
+
+.timeline ul >li .content {
+    font-style: italic;
+    text-align: left;
+    color: #333;
+    padding: 0.3em;
+    font-size: 1.0em;
+    font-weight: 300;
+    line-height: 1.4;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+}
+
+
+
+@media (max-width: 992px) {
+  .wedding.container-fluid {
+    margin: 291px 40px 50px 40px;
+  }
+}
+
+@media (max-width: 891px) {
+    .wedding.container-fluid {
+        margin: 291px 30px 50px 30px;
+    }
+
+    .invitation {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .wedding.container-fluid {
+        margin: 291px 10px 50px 10px;
+    }
+
+    .food > div {
+        flex-direction: column;
+    }
+    
+    .food img {
+        margin: auto;
+    }
+}
+
+@media (max-width: 324px) {
+    .food img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
