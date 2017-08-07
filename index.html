@@ -9,13 +9,14 @@
         <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
         <script>
           function initMap() {
-            var uluru = {lat:  -33.648692, lng: 19.720686};
+            var pb = {lat:  -33.648692, lng: 19.720686};
             var map = new google.maps.Map(document.getElementById('map'), {
               zoom: 9,
-              center: uluru
+              scrollwheel: false,
+              center: pb
             });
             var marker = new google.maps.Marker({
-              position: uluru,
+              position: pb,
               map: map
             });
           }
@@ -31,21 +32,20 @@
                     <h1>We're getting married!!</h1>
                     <p>Finally, the invitation! Welcome:) Sorry we are so slow, but you know... </p>
                     <div class="invitation">
-                      <p>Craig John and Linda Susan Hannaford</p>
+                      <p>Craig and Linda Hannaford</p>
                       <p>request the pleasure of your company at the marriage of their daughter</p>
-                      <p>Jackie Sarah Hannaford</p>
+                      <p>Jackie</p>
                       <div class="to">
                         <hr/>
                         <span>to</span>
                         <hr/>
                       </div>
-                      <p>Ryan-Neal Mes</p>
-                      <p>son of Marinus Johannes Mattheus Mes and Linda Sheryl Turner</p>
+                      <p>Ryan-Neal</p>
                       <p>4pm on Saturday the 27th January 2018</p>
                       <p>Pat Busch Nature Reserve, Robertson, Cape Town</p>
                     </div>
 
-                    <p>We've emailed you a <a target="_blank" href="https://goo.gl/forms/6RHVHrwmSOeCXY7v1">link to our RSVP form</a> which we would be most delighted if you were to fill that out as soon as you can.</p>
+                    <p>We've emailed you a <a target="_blank" href="https://goo.gl/forms/6RHVHrwmSOeCXY7v1">link to our RSVP form</a> which we would be delighted if you were to fill that out as soon as you can.</p>
                     <p>The dress code is smart/casual.</p>
                     <p><small><strong><i>Don't forget to bring your hats, sunglasses, sun cream and swimming costume!</i></strong></small></p>
                     <p class="text-danger"><small><strong><i>
@@ -57,7 +57,7 @@
                     <h2>Accomodation</h2>
                     <div class="accommodation">
                       <p>
-                        We have limited <a href="http://www.patbusch.co.za/standard-self-catering-accommodation/" target="_blank">accommodation</a> at the venue and so unfortunately not everyone will fit, it will be on a first come first serve basis. We may need people to share cottages/rooms so that we can fit as many people as possible.
+                        We have limited <a href="http://www.patbusch.co.za/standard-self-catering-accommodation/" target="_blank">accommodation</a> at the venue and so unfortunately not everyone will fit, it will be on a first come first served basis. We may need people to share cottages/rooms so that we can fit as many people as possible.
                       </p>
                       <p>
                         Standard Cottages – R400 pp for the weekend (26th & 27th)<br />
@@ -69,7 +69,7 @@
                       </p>
                       <p>If you would like to arrive a day or 2 earlier or stay a couple of days after the wedding please <a target="_blank" href="http://www.patbusch.co.za/contact-us/">organize directly with Pat Busch</a>. We will be staying from Thursday to Monday.</p>
                       <hr />
-                      <p>If you would like to stay at a different location, feel free to let us know as we can recommend some places in the area.</p>
+                      <p>If you would like to stay at a different location we can recommend some places in the area.</p>
                     </div>
                     <img src="curly.svg" >
 
@@ -77,7 +77,7 @@
                     <div class="food">
                       <p>
                         <b>Friday night</b> – bring and braai for anyone who’s there that night, we’ll provide some salads and rolls, please bring anything else you want to munch on.<br />
-                        <b>Saturday</b> – we’ll be providing lunch/brunch, tea/coffee and canapes and the evening meal on Saturday. All the food on Saturday will be vegetarian and there'll be many vegan options too.  If you have any allergies please let us know if you haven’t already.<br />
+                        <b>Saturday</b> – we’ll also be providing brunch on the day of the wedding. All the food on Saturday will be vegetarian and there'll be vegan options too.<br />
                       </p>
                       <hr/>
                       <div>
@@ -96,7 +96,7 @@
 
                     <h2>Drinks</h2>
                     <div>
-                      <p>On Saturday there will be an open bar with a limited tab stocked with beer, wine and soft drinks. Once that has run out it will turn into a cash bar. There’ll be wine on the tables. There will be tea and coffee available at times too.</p><p> For the rest of the weekend you are on your own. Robertson is close by so you can always pop to the shops to restock on anything you need.</p>
+                      <p>At the reception there will be an open bar with a limited tab stocked with beer, wine and soft drinks. Once that has run out it will turn into a cash bar.</p><p> For the rest of the weekend you are on your own. Robertson is close by so you can always pop to the shops to restock on anything you need.</p>
                     </div>
                     <img src="curly.svg"/>
 
@@ -106,7 +106,7 @@
 
                     <h2>Location</h2>
                     <p>
-                      The wedding is happening at <a href="https://www.google.com/maps/place/Plattekloof+2,+Cape+Town,+7500,+South+Africa/@-33.8784332,18.5840278,15z/data=!3m1!4b1!4m8!1m2!2m1!1spizza!3m4!1s0x1dcc5a22886f6e37:0xe7d83ffa3020bb38!8m2!3d-33.8760553!4d18.5908437" target="_blank">Pat Busch Nature Reserve in Robertson</a>.
+                      The wedding is happening at <a target="_blank" href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Pat+Busch+Private+Nature+Reserve&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=57.815136,81.650391&amp;t=h&amp;ie=UTF8&amp;hq=Pat+Busch+Private+Nature+Reserve&amp;hnear=&amp;radius=15000&amp;ll=-33.495598,19.390869&amp;spn=3.206398,3.295898&amp;z=7&amp;iwloc=A" style={{textAlign:'left'}}>Pat Busch Nature Reserve in Robertson</a>.
                     </p>
                     <div id="map" class="map">Loading map...</div>
                     <img src="curly.svg"/>
@@ -135,11 +135,6 @@
                             </li>
                             <li>
                               <div class="time">6:30pm</div>
-                              <div class="icon">&nbsp;</div>
-                              <div class="content">Gather at the main tent for Speeches</div>
-                            </li>
-                            <li>
-                              <div class="time">7:00pm</div>
                               <div class="icon">&nbsp;</div>
                               <div class="content">Reception</div>
                             </li>
