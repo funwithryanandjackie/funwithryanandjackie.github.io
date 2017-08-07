@@ -192,7 +192,7 @@ h1 {
     .food > div {
         flex-direction: column;
     }
-    
+
     .food img {
         margin: auto;
     }
@@ -204,5 +204,3 @@ h1 {
         width: 100%;
     }
 }
-
-
