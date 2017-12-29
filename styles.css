@@ -166,6 +166,16 @@ h1 {
     left: 50%;
 }
 
+.bank {
+  height: 120px;
+}
+
+.bank > div {
+  width: 50%;
+  display: inline;
+  float: left;
+}
+
 @media (max-width: 992px) {
   .wedding.container-fluid {
     margin: 291px 40px 50px 40px;
